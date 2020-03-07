@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-title>Owner List</mat-card-title>
+    <mat-card-content>
+      <mat-list>
+        <app-owner-info *ngFor="let owner of owners; let i = index" [owner]="owner"></app-owner-info>
+      </mat-list>
+    </mat-card-content>
+  
+    <button mat-fab color="primary" [routerLink]="['/owner-add']">Add</button>
+  
+  </mat-card>

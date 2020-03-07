@@ -1,0 +1,4 @@
+<mat-list-item>
+    <h2><a mat-button (click)="showDetails(true)">{{owner.name}}</a></h2>
+    <app-owner-edit *ngIf="showEdit" [ownerInfo]="owner" (close)="showDetails(false)"></app-owner-edit>
+</mat-list-item>
